@@ -14,7 +14,7 @@ export default function Home() {
             </div>
             <div className="leading-tight">
               <p className="font-semibold">Sebastian Felipe Sierra Chacon</p>
-              <p className="text-xs opacity-70">UX/UI · Research · Data</p>
+              <p className="text-xs opacity-70">UX/UI · Value Proposition · Data</p>
             </div>
           </div>
 
@@ -74,9 +74,7 @@ export default function Home() {
             </h1>
 
             <p className="text-lg opacity-80 max-w-xl">
-              Trabajo en banca digital y conecto métricas (SUS/NPS/CES), voz del cliente y
-              comportamiento para reducir fricción, aumentar claridad y crear soluciones
-              útiles y medibles.
+            Me interesa entender a las personas, cuestionar lo evidente y transformar problemas reales en experiencias digitales simples, coherentes y humanas.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3">
@@ -96,7 +94,7 @@ export default function Home() {
             </div>
 
             <div className="flex flex-wrap gap-2 pt-2 text-sm">
-              {["UX/UI", "Research", "UX Data", "Banca digital", "Behavioral design"].map((t) => (
+              {["UX/UI", "Value Proposition", "UX Data", "Banca digital", "Behavioral design"].map((t) => (
                 <span
                   key={t}
                   className="border border-zinc-200 dark:border-zinc-800 rounded-full px-3 py-1 opacity-80"
@@ -121,7 +119,7 @@ export default function Home() {
 
               <div className="space-y-1">
                 <p className="text-sm opacity-70">Resumen</p>
-                <p className="font-semibold text-lg">UX/UI · Research · Data</p>
+                <p className="font-semibold text-lg">UX/UI · Value Proposition · Data</p>
                 <p className="text-sm opacity-80">
                   Enfoque: reducir fricción, mejorar claridad y construir confianza.
                 </p>
@@ -159,9 +157,22 @@ export default function Home() {
               Tres casos reales: research a escala, reporting de experiencia e innovación.
             </p>
           </div>
-          <Link href="/work" className="text-sm text-blue-600 dark:text-blue-400 hover:underline">
-            Ver todo →
-          </Link>
+          <Link
+  href="/work"
+  className="
+    inline-flex items-center gap-2
+    px-5 py-2.5 rounded-xl text-sm font-semibold
+    border transition backdrop-blur
+
+    bg-white text-neutral-900 border-neutral-200
+    hover:bg-neutral-100
+
+    dark:bg-neutral-900 dark:text-neutral-100 dark:border-neutral-800
+    dark:hover:bg-neutral-800
+  "
+>
+  Ver todos los proyectos →
+</Link>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 mt-8">
@@ -204,18 +215,20 @@ export default function Home() {
       <div className="max-w-6xl mx-auto px-6">
       <section id="experiencia" className="mt-24 scroll-mt-28">
   <h2 className="text-3xl font-bold">Experiencia</h2>
-  <p className="text-neutral-300/80 mt-2">
-    Resumen profesional (luego lo refinamos con logros y métricas).
+  <p className="mt-1 text-neutral-600 dark:text-neutral-400">
+  Diseñador UX/UI enfocado en research y data, con experiencia en banca digital y en la creación de soluciones que reducen fricción, mejoran la claridad y construyen confianza. Trabajo conectando métricas (SUS, NPS, CES), voz del cliente y comportamiento real para transformar información compleja en decisiones de diseño accionables.
+
+Me caracterizo por un enfoque analítico y estructurado, pero también por una mirada sensible y reflexiva sobre las personas y los contextos. Me interesa entender lo que hay detrás de los números, cuestionar supuestos y profundizar en los problemas antes de proponer soluciones. Busco diseñar experiencias que no solo funcionen, sino que se sientan coherentes, humanas y honestas.
   </p>
 
   <div className="mt-8 space-y-6">
 
     {/* ADL */}
-    <div className="rounded-3xl border border-neutral-800 bg-neutral-950/40 p-8 group">
+    <div className="rounded-3xl border border-neutral-200/70 dark:border-neutral-800 bg-white/80 dark:bg-neutral-950/40 p-8 shadow-sm dark:shadow-none">
       <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
         <div>
-          <h3 className="text-xl font-semibold">ADL Digital Lab Diseñador UX/UI Sr</h3>
-          <p className="text-neutral-400 mt-1">
+          <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-50">ADL Digital Lab Diseñador UX/UI Sr</h3>
+          <p className="mt-1 text-neutral-600 dark:text-neutral-400">
             Operaciones Digitales · UX / Research / Data
           </p>
         </div>
@@ -225,7 +238,7 @@ export default function Home() {
         </div>
       </div>
 
-      <ul className="mt-6 space-y-2 text-neutral-200/90">
+      <ul className="mt-6 space-y-2 text-neutral-700 dark:text-neutral-200/90">
         <li>• Aplicación de metodologías de diseño y metodologías ágiles en productos digitales para distintos clientes.</li>
         <li>• Acompañamiento en procesos de co-creación y desarrollo con equipos interdisciplinares.</li>
         <li>• Pruebas y testeos para prototipos digitales centrados en el usuario (Banco de Occidente y Banco Popular).</li>
@@ -256,11 +269,11 @@ export default function Home() {
     </div>
    
     {/* DAVIVIENDA */}
-    <div className="rounded-3xl border border-neutral-800 bg-neutral-950/40 p-8 group">
+    <div className="rounded-3xl border border-neutral-200/70 dark:border-neutral-800 bg-white/80 dark:bg-neutral-950/40 p-8 shadow-sm dark:shadow-none">
       <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
         <div>
-          <h3 className="text-xl font-semibold">Banco Davivienda — Grupo Bolívar</h3>
-          <p className="text-neutral-400 mt-1">
+        <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-50">Banco Davivienda — Grupo Bolívar</h3>
+        <p className="mt-1 text-neutral-600 dark:text-neutral-400">
             Diseñador UX · Gestor de Proyectos de Innovación
           </p>
         </div>
@@ -270,7 +283,7 @@ export default function Home() {
         </div>
       </div>
 
-      <ul className="mt-6 space-y-2 text-neutral-200/90">
+      <ul className="mt-6 space-y-2 text-neutral-700 dark:text-neutral-200/90">
         <li>• Desarrollo de soluciones digitales para el Grupo Bolívar y el área de innovación.</li>
         <li>• Diseño UX y soluciones de innovación incremental y organizacional.</li>
       </ul>
@@ -302,29 +315,29 @@ export default function Home() {
       {/* Formación */}
       <section id="formacion" className="mt-24 scroll-mt-28">
   <h2 className="text-3xl font-bold">Formación</h2>
-  <p className="text-neutral-300/80 mt-2">
+  <p className="mt-1 text-neutral-600 dark:text-neutral-400">
     Educación formal + certificaciones y cursos relevantes.
   </p>
 
   <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
 
-    <div className="rounded-3xl border border-neutral-800 bg-neutral-950/40 p-8">
-      <h3 className="text-xl font-semibold">Pontificia Universidad Javeriana</h3>
-      <p className="text-neutral-400 mt-1">Pregrado en Diseño Industrial</p>
-      <p className="text-neutral-300/80 mt-2">2018</p>
+  <div className="rounded-3xl border border-neutral-200/70 dark:border-neutral-800 bg-white/80 dark:bg-neutral-950/40 p-8 shadow-sm dark:shadow-none">
+  <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-50">Pontificia Universidad Javeriana</h3>
+  <p className="mt-1 text-neutral-600 dark:text-neutral-400">Pregrado en Diseño Industrial</p>
+  <p className="mt-1 text-neutral-600 dark:text-neutral-400">2018</p>
 
-      <p className="mt-5 text-neutral-200/90">
+  <p className="mt-1 text-neutral-600 dark:text-neutral-400">
         Formación base en diseño, pensamiento sistémico y soluciones centradas en las personas.
       </p>
     </div>
 
-    <div className="rounded-3xl border border-neutral-800 bg-neutral-950/40 p-8">
-      <h3 className="text-xl font-semibold">Certificaciones / Cursos</h3>
+    <div className="rounded-3xl border border-neutral-200/70 dark:border-neutral-800 bg-white/80 dark:bg-neutral-950/40 p-8 shadow-sm dark:shadow-none">
+    <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-50">Certificaciones / Cursos</h3>
 
       <div className="mt-5 space-y-6">
         <div>
-          <p className="text-neutral-400 text-sm">Udemy</p>
-          <ul className="mt-2 space-y-2 text-neutral-200/90">
+        <p className="mt-1 text-neutral-600 dark:text-neutral-400">Udemy</p>
+        <ul className="mt-6 space-y-2 text-neutral-700 dark:text-neutral-200/90">
             <li>• Liderazgo y gestión de equipos</li>
             <li>• Creatividad e innovación en los negocios</li>
             <li>• Presentaciones efectivas: Storytelling</li>
@@ -332,8 +345,8 @@ export default function Home() {
         </div>
 
         <div>
-          <p className="text-neutral-400 text-sm">LTC — Language Teaching Center</p>
-          <p className="text-neutral-200/90 mt-2">
+        <p className="mt-1 text-neutral-600 dark:text-neutral-400">LTC — Language Teaching Center</p>
+        <p className="mt-1 text-neutral-600 dark:text-neutral-400">
             English Language Short Course — Eastbourne, United Kingdom (2012)
             B2 level in English.
           </p>
