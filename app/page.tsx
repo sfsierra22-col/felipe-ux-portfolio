@@ -182,7 +182,7 @@ export default function Home() {
       transition
     "
                   >
-                    {role.cta} <span aria-hidden>→</span>
+                    {role.cta} 
                   </Link>
                 </div>
               </div>
