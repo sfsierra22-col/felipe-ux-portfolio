@@ -1,9 +1,8 @@
 "use client"
 
 import Link from "next/link"
-import LanguageToggle from "../components/language-toggle"
 import { useLanguage } from "../components/language-provider"
-import ThemeToggle from "../components/theme-toggle"
+import Sidebar from "../components/sidebar"
 import { homeCopy } from "../content/home-copy"
 
 export default function Home() {
@@ -12,73 +11,12 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-zinc-50 dark:bg-black text-zinc-900 dark:text-zinc-50">
-      {/* Top Bar */}
+      <div className="md:flex">
+        <Sidebar />
 
-      <header className="sticky top-0 z-50 border-b border-zinc-200/70 dark:border-zinc-800 bg-zinc-50/80 dark:bg-black/70 backdrop-blur">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="h-9 w-9 rounded-full bg-zinc-200 dark:bg-zinc-800 flex items-center justify-center font-bold">
-              F
-            </div>
-            <div className="leading-tight">
-              <p className="font-semibold">{copy.header.name}</p>
-              <p className="text-xs opacity-70">{copy.header.title}</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-3">
-            <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
-              <a href="#proyectos" className="opacity-80 hover:opacity-100 transition">
-                {copy.header.nav.projects}
-              </a>
-              <a href="#experiencia" className="opacity-80 hover:opacity-100 transition">
-                {copy.header.nav.experience}
-              </a>
-              <a href="#formacion" className="opacity-80 hover:opacity-100 transition">
-                {copy.header.nav.education}
-              </a>
-              <a href="#contacto" className="opacity-80 hover:opacity-100 transition">
-                {copy.header.nav.contact}
-              </a>
-
-              <div className="w-px h-5 bg-zinc-300 dark:bg-zinc-700 mx-1" />
-
-              <a
-                href="https://www.linkedin.com/in/felipesierra22/"
-                target="_blank"
-                rel="noreferrer"
-                className="opacity-80 hover:opacity-100 transition"
-              >
-                {copy.header.nav.linkedin}
-              </a>
-
-              <a
-                href="/cv-felipe.pdf"
-                target="_blank"
-                className="inline-flex items-center rounded-lg px-3 py-1.5 border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-900 transition"
-              >
-                {copy.header.nav.downloadCv}
-              </a>
-            </nav>
-
-            <div className="flex items-center gap-2">
-              <ThemeToggle />
-              <LanguageToggle />
-            </div>
-
-            {/* Mobile quick link */}
-            <Link
-              href="/work"
-              className="md:hidden inline-flex items-center rounded-lg px-3 py-1.5 border border-zinc-300 dark:border-zinc-700"
-            >
-              {copy.header.nav.work}
-            </Link>
-          </div>
-        </div>
-      </header>
-
-      {/* Hero */}
-      <section className="max-w-6xl mx-auto px-6 pt-14 pb-10">
+        <main className="flex-1">
+          {/* Hero */}
+          <section id="perfil" className="max-w-6xl mx-auto px-6 pt-14 pb-10 scroll-mt-8">
         <div className="grid md:grid-cols-2 gap-10 items-center">
           {/* Left */}
           <div className="space-y-6">
@@ -305,8 +243,8 @@ export default function Home() {
           </div>
         </section>
       </div>
-      {/* Contacto */}
-      <section id="contacto" className="max-w-6xl mx-auto px-6 py-14">
+          {/* Contacto */}
+          <section id="contacto" className="max-w-6xl mx-auto px-6 py-14">
         <h2 className="text-2xl font-semibold">{copy.contact.title}</h2>
         <p className="opacity-70 mt-1">{copy.contact.subtitle}</p>
 
@@ -329,12 +267,14 @@ export default function Home() {
             </a>
           </div>
         </div>
-      </section>
+          </section>
 
-      {/* Footer */}
-      <footer className="py-10 flex justify-center text-sm opacity-60">
-        {copy.footer.replace("{year}", String(new Date().getFullYear()))}
-      </footer>
+          {/* Footer */}
+          <footer className="py-10 flex justify-center text-sm opacity-60">
+            {copy.footer.replace("{year}", String(new Date().getFullYear()))}
+          </footer>
+        </main>
+      </div>
     </div>
   )
 }

@@ -1,38 +1,21 @@
 import Link from "next/link"
+import Sidebar from "../../components/sidebar"
 
 export default function ExperienciaPage() {
   return (
     <div className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-black dark:text-zinc-50">
-      <header className="sticky top-0 z-50 border-b border-zinc-200/70 dark:border-zinc-800 bg-zinc-50/80 dark:bg-black/70 backdrop-blur">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="h-9 w-9 rounded-full bg-zinc-200 dark:bg-zinc-800 flex items-center justify-center font-bold">
-              F
-            </div>
-            <div className="leading-tight">
-              <p className="font-semibold">Sebastian Felipe Sierra Chacon</p>
-              <p className="text-xs opacity-70">UX/UI · Research · Data</p>
-            </div>
-          </div>
+      <div className="md:flex">
+        <Sidebar sectionBasePath="/" />
 
-          <div className="flex items-center gap-3">
+        <main className="flex-1 max-w-6xl mx-auto px-6 py-12">
+          <div className="flex justify-end mb-6">
             <Link
               href="/"
               className="px-4 py-2 rounded-xl border border-zinc-300 dark:border-zinc-700 text-sm font-medium hover:bg-zinc-100 dark:hover:bg-zinc-900 transition"
             >
               ← Volver al inicio
             </Link>
-            <a
-              href="/cv.pdf"
-              className="px-4 py-2 rounded-xl border border-zinc-300 dark:border-zinc-700 text-sm font-medium hover:bg-zinc-100 dark:hover:bg-zinc-900 transition"
-            >
-              Descargar CV
-            </a>
           </div>
-        </div>
-      </header>
-
-      <main className="max-w-6xl mx-auto px-6 py-12">
         <section className="max-w-3xl">
           <p className="text-sm opacity-70">Experiencia</p>
           <h1 className="mt-3 text-4xl md:text-5xl font-extrabold leading-tight">
@@ -226,6 +209,7 @@ export default function ExperienciaPage() {
           </div>
         </section>
       </main>
+    </div>
     </div>
   )
 }
