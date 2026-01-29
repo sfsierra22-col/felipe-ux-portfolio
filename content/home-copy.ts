@@ -4,13 +4,17 @@ export const homeCopy = {
       name: "Sebastian Felipe Sierra Chacon",
       title: "UX/UI · Value Proposition · Data",
       nav: {
+        profile: "Perfil",
         projects: "Proyectos",
         experience: "Experiencia",
         education: "Formación",
         contact: "Contacto",
         linkedin: "LinkedIn",
-        downloadCv: "Descargar CV",
         work: "Trabajo",
+      },
+      controls: {
+        theme: "Modo",
+        language: "Idioma",
       },
     },
     hero: {
@@ -153,13 +157,17 @@ export const homeCopy = {
       name: "Sebastian Felipe Sierra Chacon",
       title: "UX/UI · Value Proposition · Data",
       nav: {
+        profile: "Profile",
         projects: "Projects",
         experience: "Experience",
         education: "Education",
         contact: "Contact",
         linkedin: "LinkedIn",
-        downloadCv: "Download CV",
         work: "Work",
+      },
+      controls: {
+        theme: "Theme",
+        language: "Language",
       },
     },
     hero: {
